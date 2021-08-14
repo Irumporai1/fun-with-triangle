@@ -6,11 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area</title>
-    <link href="../styles.css" rel="stylesheet">
+    <link href="/css/areastyle.css" rel="stylesheet">
 </head>
 
 <body>
+    <button class="go-home">
+        <a href="../index.html">Home</a>
+    </button>
 
+    <div class="header">
+        <h2>Calculate the area of the triangle</h2>
+        <br>
+        <h3>Area of the triangle = 1/2 * base * height</h3>
+    </div>
+
+    <form class="container">
+
+        <div class="form-group">
+            <label for="base">BASE</label>
+            <input type="number" class="base" placeholder="Enter the base value" min="1" max="999" required>
+        </div>
+
+        <div class="form-group">
+            <label for="height">HEIGHT</label>
+            <input type="number" class="height" placeholder="Enter the height value" min="1" max="999" required>
+        </div>
+
+        <button class="calculate">Calculate</button>
+
+        <div class="output"></div>
+
+    </form>
+    <script>
+
+        var base = document.querySelector('.base');
+        var height = document.querySelector('.height');
+        var output = document.querySelector('.output');
+
+        document.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            let b = base.value;
+            let h = height.value;
+
+            let area = ((1.0 / 2.0) * b * h).toFixed(2);
+
+            output.innerHTML = `<p>The area of the triangle is ${area} cm  <sup>2</sup></p>`;
+
+            output.style.display = "block";
+
+        });
+
+
+    </script>
 </body>
 
 </html>
