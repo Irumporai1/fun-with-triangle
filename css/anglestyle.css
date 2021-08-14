@@ -1,0 +1,74 @@
+.go-home{
+    margin: 2rem;
+    margin-top : 8rem;
+    padding : .7rem 1rem;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+body{
+    background-color:#FEF2F2 ;
+    text-align: center;
+    max-width: 650px;
+    max-height: 100vh;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor :pointer;
+    
+}
+
+label{
+    display : block;
+    margin-bottom: .5rem;
+    font-weight : bold;
+}
+
+input{
+    padding : .5rem 1rem;
+    width : 50%;
+}
+
+.secondary-btn{
+    margin: 2rem;
+    margin-top : 8rem;
+    padding : .5rem 1rem;
+}
+
+.secondary-btn:hover , button:hover{
+    background : wheat;
+}
+
+.header{
+    margin : 2rem;
+}
+
+.container{
+    border : 1px solid black;
+    padding : 1rem;
+    margin : 1rem;
+}
+
+.form-group{
+    padding : 1rem;
+    margin : 1rem;
+}
+
+.calculate{
+    padding : .5rem 1rem;
+    border-radius: 2rem;
+}
+
+.output{
+    display: none;
+    border : 1px solid red;
+    padding : 1rem;
+    margin : 1rem;
+    border-radius : .5rem;
+    background-color: wheat;
+}

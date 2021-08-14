@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse</title>
-    <link href="../styles.css" rel="stylesheet">
+    <link href="../css/hypostyle.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <button class="go-home">
+        <a href="../index.html">Home</a>
+    </button>
+
+    <div class="header">
+        <h2>Enter the lengths of sides of right angle triangle
+        </h2>
+
+    </div>
+    <form>
+
+        <div class="form-group">
+            <label>BASE </label>
+            <input type="number" class="base" placeholder="Enter the base value" min="1" max="999" required>
+        </div>
+
+        <div class="form-group">
+            <label>HEIGHT</label>
+            <input type="number" class="height" placeholder="Enter the height value" min="1" max="999" required>
+        </div>
+
+        <div>
+            <button class="calculate">Calculate</button>
+        </div>
+
+        <div class="output"></div>
+
+    </form>
 </body>
+<script src="../script/hypo.js"></script>
+
 </html>

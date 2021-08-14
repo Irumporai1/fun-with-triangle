@@ -6,11 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angles</title>
-    <link href="../styles.css" rel="stylesheet">
+    <link href="/css/anglestyle.css" rel="stylesheet">
 </head>
 
 <body>
+    <button class="go-home">
+        <a href="../index.html">Home</a>
+    </button>
+
+    <div class="header">
+        <h2>Enter the angles in below input boxes and we will tell
+            you if those angles make a Triangle
+        </h2>
+
+    </div>
+    <form>
+
+        <div class="form-group">
+            <label>A = </label>
+            <input type="number" class="input-angles" min='1' max='180' required>
+        </div>
+
+        <div class="form-group">
+            <label>B = </label>
+            <input type="number" class="input-angles" min='1' max='180' required>
+        </div>
+
+        <div class="form-group">
+            <label>C = </label>
+            <input type="number" class="input-angles" min='1' max='180' required>
+        </div>
+
+        <div>
+            <button class="submit-angles">Submit</button>
+        </div>
+
+        <div class="angle-output"></div>
+
+    </form>
 
 </body>
+<script src="../script/angle.js"></script>
 
 </html>
