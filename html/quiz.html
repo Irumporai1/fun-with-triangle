@@ -6,11 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link href="../styles.css" rel="stylesheet">
+    <link href="../css/quizstyle.css" rel="stylesheet">
 </head>
 
 <body>
+    <button class="go-home">
+        <a href="../index.html">Home</a>
+    </button>
 
+    <div class="header">
+        <h2>Quiz related to Triangle
+        </h2>
+
+    </div>
+    <form class="quiz-form">
+        <div class="question-div">
+            <p> If a triangle has angles 1350, 150, 300. Is it an obtuse triangle ?</p>
+            <label><input type="radio" name=question1 value="Yes" />Yes</label>
+            <label><input type="radio" name=question1 value="No" />No</label>
+
+        </div>
+
+        <div class="question-div">
+            <p> How many straight lines you need to form a triangle ?</p>
+            <label><input type="radio" name=question2 value="1" />1</label>
+            <label><input type="radio" name=question2 value="3" />3</label>
+            <label><input type="radio" name=question2 value="4" />4</label>
+        </div>
+
+        <div class="question-div">
+            <p> What is the sum of all internal angles of a Triangle ?</p>
+            <label><input type="radio" name=question3 value="180" />180</label>
+            <label><input type="radio" name=question3 value="100" />100</label>
+            <label><input type="radio" name=question3 value="120" />120</label>
+        </div>
+
+        <div class="question-div">
+            <p> A triangle whose any one of the angles is an obtuse angle or more than 90 degrees, then it is called
+                obtuse-angled triangle</p>
+            <label><input type="radio" name=question4 value="True" />True</label>
+            <label><input type="radio" name=question4 value="False" />False</label>
+        </div>
+
+        <div class="question-div">
+            <p> An acute angle triangle (or acute-angled triangle) is a triangle in which all the interior angles are
+                acute angles. To recall, an acute angle is an angle that is less than 90°.</p>
+            <label><input type="radio" name=question5 value="True" />True</label>
+            <label><input type="radio" name=question5 value="False" />False</label>
+        </div>
+
+    </form>
+
+    <button class="submit-button">Submit</button>
+    <div class="output"></div>
+
+    <script src="../script/quiz.js"></script>
 </body>
+
 
 </html>
